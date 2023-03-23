@@ -510,3 +510,66 @@ i.icon-small-browser {
   text-decoration: none;
   background-color: transparent;
 }
+
+.guides-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.guides-list li {
+  padding: 20px 0;
+  min-height: 84px;
+}
+.guides-list li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.guides-list h3 {
+  margin: 0;
+  margin-left: 90px;
+  color: var(--highlight);
+}
+.guides-list p {
+  margin-left: 90px;
+  font-size: 18px;
+}
+
+.guide-icon {
+  position: relative;
+  top: 3px;
+  margin-right: 20px;
+
+  width: 70px;
+  height: 70px;
+  float: left;
+
+  color: #fff;
+  font-size: 1.8em;
+  line-height: 70px;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #d0d0d0;
+  border-radius: 70px;
+  transition: 0.1s background-color ease-in;
+  -webkit-transition: 0.1s background-color ease-in;
+  -moz-transition: 0.1s background-color ease-in;
+}
+.guide-icon:before {
+  content: attr(data-icon);
+  font-size: 120%;
+}
+.guide-icon-meta:before {
+  content: "?";
+  position: relative;
+}
+.guide-icon-other:before {
+  content: "❯";
+  position: relative;
+}
+a:hover .guide-icon,
+.guide-icon:hover {
+  background-color: #d3360b;
+  transition: 0.1s background-color ease-in;
+  -webkit-transition: 0.1s background-color ease-in;
+  -moz-transition: 0.1s background-color ease-in;
+}
